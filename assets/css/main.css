@@ -1119,6 +1119,7 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+/* Estilos para los filtros */
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1126,7 +1127,6 @@ section,
   text-align: center;
 }
 
-/* Estilos para los filtros */
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
@@ -1140,6 +1140,8 @@ section,
   border: 2px solid var(--accent-color); /* Borde verde */
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
+  position: relative; /* Necesario para el z-index */
+  z-index: 1; /* Asegura que el texto esté por encima del fondo */
 }
 
 /* Estilos para el filtro activo o al hacer hover */
@@ -1148,6 +1150,26 @@ section,
   color: var(--contrast-color); /* Texto en blanco */
   background-color: var(--accent-color); /* Fondo verde */
   border-color: var(--accent-color); /* Borde verde */
+}
+
+/* Asegura que el texto esté por encima del fondo */
+.portfolio .portfolio-filters li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--accent-color); /* Fondo verde */
+  border-radius: 4px;
+  z-index: -1; /* Coloca el fondo detrás del texto */
+  opacity: 0; /* Inicialmente transparente */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover::before,
+.portfolio .portfolio-filters li.filter-active::before {
+  opacity: 1; /* Muestra el fondo al hacer hover o estar activo */
 }
 
 .portfolio .portfolio-filters li:first-child {
