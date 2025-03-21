@@ -1782,6 +1782,29 @@ section,
   color: var(--accent-color);
 }
 
+/*--------------------------------------------------------------
+# Ajustes para los íconos en la sección de Servicios
+--------------------------------------------------------------*/
+.services .service-item .icon img {
+  width: 50px; /* Tamaño del ícono */
+  height: 50px; /* Tamaño del ícono */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.services .service-item .icon {
+  width: 60px; /* Tamaño del contenedor */
+  height: 60px; /* Tamaño del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px; /* Margen inferior para separar el ícono del texto */
+}
+
+.services .service-item .icon {
+  margin-bottom: 15px; /* Espacio entre el ícono y el título */
+  padding: 10px; /* Espacio interno del contenedor */
+}
+
 /*-----------------------
 # Starter Section Section
 
