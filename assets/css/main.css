@@ -1917,6 +1917,50 @@ section,
 .services .service-item {
   padding: 30px 20px !important; /* Reducir el padding vertical */
 }
+
+/* Estilo armonizado para los recuadros de servicios */
+.service-item {
+  background-color: rgba(22, 25, 28, 0.8); /* Fondo oscuro semi-transparente */
+  border: 1px solid rgba(0, 180, 160, 0.3); /* Borde con el color turquesa de tus iconos */
+  border-radius: 8px;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(22, 25, 28, 0.9); /* Un poco más oscuro al hacer hover */
+  border-color: rgba(0, 180, 160, 0.8); /* Borde más intenso al hacer hover */
+  box-shadow: 0 5px 15px rgba(0, 180, 160, 0.2); /* Sombra con el color de acento */
+}
+
+.service-item .icon {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item .icon i.bi {
+  font-size: 1.75rem !important;
+  color: rgb(0, 180, 160); /* Color turquesa para los iconos */
+}
+
+.service-item h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.service-item p {
+  color: rgba(255, 255, 255, 0.7); /* Texto con ligera transparencia para mejor legibilidad */
+  font-size: 0.95rem;
+}
 /*-----------------------
 # Starter Section Section
 
