@@ -55,7 +55,7 @@
           <li><a href="#services">Servicios</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Nosotros</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+         <!--  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -71,7 +71,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#contact">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -746,8 +746,7 @@
 
 </section><!-- /Team Section -->
 
-<footer id="footer" class="footer dark-background">
-
+<footer id="contact" class="footer dark-background"> <!-- Agrega el id="contact" aquí -->
   <div class="footer-top">
     <div class="container">
       <div class="row gy-4">
@@ -806,7 +805,6 @@
             <div class="sent-message">¡Gracias por suscribirte!</div>
           </form>
         </div>
-
       </div>
     </div>
   </div>
@@ -820,7 +818,6 @@
       </div>
     </div>
   </div>
-
 </footer>
 
   <!-- Scroll Top -->
@@ -838,6 +835,15 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script>
+    document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+      e.preventDefault(); // Evita el comportamiento predeterminado
+      document.querySelector('#contact').scrollIntoView({
+        behavior: 'smooth' // Desplazamiento suave
+      });
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
