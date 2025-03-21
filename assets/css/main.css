@@ -1786,12 +1786,11 @@ section,
 # Ajustes específicos para los íconos en la sección de Servicios
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
+  padding: 30px 20px !important; /* Reducir el padding vertical */
   height: 100%;
   transition: all ease-in-out 0.3s;
+  /* Los valores de fondo y borde se definen en el selector general abajo */
 }
 
 /* Ajustar el tamaño de los íconos */
@@ -1802,156 +1801,49 @@ section,
 }
 
 /* Ajustar el contenedor de los íconos */
-.services .service-item .icon {
+.services .service-item .icon,
+.service-item .icon {
   width: 60px !important; /* Tamaño del contenedor */
   height: 60px !important; /* Tamaño del contenedor */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px; /* Margen inferior para separar el ícono del texto */
+  margin: 0 auto 15px; /* Margen inferior para separar el ícono del texto */
   padding: 10px; /* Espacio interno del contenedor */
 }
 
 /* ==================== */
-/* Servicios */
+/* Servicios - Estilo Armonizado */
 /* ==================== */
 
 .service-item {
   text-align: center;
-  padding: 20px;
-  border: 1px solid #e0e0e0;
+  padding: 25px 20px;
+  border: 1px solid rgba(0, 123, 255, 0.3); /* Borde azul suave que combine con tus iconos */
   border-radius: 10px;
   transition: all 0.3s ease;
-  background-color: #fff;
+  background-color: rgba(18, 18, 20, 0.9); /* Fondo oscuro que armoniza con tu tema */
   margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .service-item .icon {
-  font-size: 2.5rem; /* Tamaño de los iconos */
-  color: #007bff; /* Color del icono */
   margin-bottom: 15px;
-}
-
-.service-item h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.service-item p {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* ==================== */
-/* Servicios */
-/* ==================== */
-
-.services .icon-box {
-  padding: 30px 20px;
-  transition: ease-in-out 0.3s;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff; /* Fondo blanco */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 20px; /* Espacio entre cajas */
-}
-
-.services .icon-box i {
-  font-size: 2.5rem; /* Tamaño de los iconos */
-  color: var(--accent-color); /* Color del icono */
-  margin-bottom: 15px; /* Espacio debajo del icono */
-}
-
-.services .icon-box h3 {
-  font-weight: 700;
-  margin: 10px 0 0 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 1.2rem; /* Tamaño del título */
-  line-height: 26px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.services .icon-box p {
-  font-size: 0.9rem; /* Tamaño del texto */
-  color: #666; /* Color del texto */
-  margin-top: 10px; /* Espacio arriba del texto */
-}
-
-.services .icon-box:hover {
-  border-color: var(--accent-color);
-  transform: translateY(-5px); /* Efecto de hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
-}
-
-.services .icon-box:hover h3 {
-  color: var(--accent-color); /* Cambiar color del título al hacer hover */
-}
-
-/* Ajuste específico para los iconos de Bootstrap en los servicios */
-.service-item .icon i.bi {
-  font-size: 1.75rem !important; /* Tamaño más pequeño para los iconos */
-}
-
-.service-item .icon {
-  width: 60px !important;
-  height: 60px !important;
-  margin: 0 auto 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Sobrescribe cualquier otro estilo que pueda estar haciendo los iconos grandes */
-.services .service-item {
-  padding: 30px 20px !important; /* Reducir el padding vertical */
-}
-
-/* Estilo armonizado para los recuadros de servicios */
-.service-item {
-  background-color: rgba(22, 25, 28, 0.8); /* Fondo oscuro semi-transparente */
-  border: 1px solid rgba(0, 180, 160, 0.3); /* Borde con el color turquesa de tus iconos */
-  border-radius: 8px;
-  padding: 25px 20px;
-  transition: all 0.3s ease;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.service-item:hover {
-  transform: translateY(-5px);
-  background-color: rgba(22, 25, 28, 0.9); /* Un poco más oscuro al hacer hover */
-  border-color: rgba(0, 180, 160, 0.8); /* Borde más intenso al hacer hover */
-  box-shadow: 0 5px 15px rgba(0, 180, 160, 0.2); /* Sombra con el color de acento */
-}
-
-.service-item .icon {
-  width: 60px !important;
-  height: 60px !important;
-  margin: 0 auto 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .service-item .icon i.bi {
-  font-size: 1.75rem !important;
-  color: rgb(0, 180, 160); /* Color turquesa para los iconos */
+  font-size: 1.75rem !important; /* Tamaño más pequeño para los iconos */
+  color: #007bff; /* Color azul para los iconos */
+}
+
+/* Aseguramos que los iconos SVG u otros tipos también tengan el color correcto */
+.service-item svg,
+.service-item i {
+  color: #007bff; /* Color azul para los iconos */
 }
 
 .service-item h3 {
-  color: white;
+  color: white; /* Texto claro para el título */
   font-size: 1.25rem;
   margin-bottom: 12px;
   font-weight: 600;
@@ -1960,6 +1852,65 @@ section,
 .service-item p {
   color: rgba(255, 255, 255, 0.7); /* Texto con ligera transparencia para mejor legibilidad */
   font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(22, 25, 28, 0.95); /* Un poco más oscuro al hacer hover */
+  border-color: rgba(0, 123, 255, 0.8); /* Borde más intenso al hacer hover */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.25); /* Sombra con el color azul de tus iconos */
+}
+
+/* ==================== */
+/* Mantener estilos para icon-box por compatibilidad */
+/* ==================== */
+
+.services .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 18, 20, 0.9); /* Actualizado para armonizar */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.services .icon-box i {
+  font-size: 2.5rem;
+  color: #007bff; /* Color del icono */
+  margin-bottom: 15px;
+}
+
+.services .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 1.2rem;
+  line-height: 26px;
+  color: white; /* Actualizado para mejor legibilidad */
+}
+
+.services .icon-box p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7); /* Actualizado para mejor legibilidad */
+  margin-top: 10px;
+}
+
+.services .icon-box:hover {
+  border-color: rgba(0, 123, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.25);
+}
+
+.services .icon-box:hover h3 {
+  color: #007bff;
 }
 /*-----------------------
 # Starter Section Section
