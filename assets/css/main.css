@@ -1898,6 +1898,25 @@ section,
 .services .icon-box:hover h3 {
   color: var(--accent-color); /* Cambiar color del título al hacer hover */
 }
+
+/* Ajuste específico para los iconos de Bootstrap en los servicios */
+.service-item .icon i.bi {
+  font-size: 1.75rem !important; /* Tamaño más pequeño para los iconos */
+}
+
+.service-item .icon {
+  width: 60px !important;
+  height: 60px !important;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sobrescribe cualquier otro estilo que pueda estar haciendo los iconos grandes */
+.services .service-item {
+  padding: 30px 20px !important; /* Reducir el padding vertical */
+}
 /*-----------------------
 # Starter Section Section
 
