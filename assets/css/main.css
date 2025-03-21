@@ -1811,6 +1811,93 @@ section,
   margin: 0 auto 20px; /* Margen inferior para separar el ícono del texto */
   padding: 10px; /* Espacio interno del contenedor */
 }
+
+/* ==================== */
+/* Servicios */
+/* ==================== */
+
+.service-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.service-item .icon {
+  font-size: 2.5rem; /* Tamaño de los iconos */
+  color: #007bff; /* Color del icono */
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== */
+/* Servicios */
+/* ==================== */
+
+.services .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espacio entre cajas */
+}
+
+.services .icon-box i {
+  font-size: 2.5rem; /* Tamaño de los iconos */
+  color: var(--accent-color); /* Color del icono */
+  margin-bottom: 15px; /* Espacio debajo del icono */
+}
+
+.services .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 1.2rem; /* Tamaño del título */
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.services .icon-box p {
+  font-size: 0.9rem; /* Tamaño del texto */
+  color: #666; /* Color del texto */
+  margin-top: 10px; /* Espacio arriba del texto */
+}
+
+.services .icon-box:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px); /* Efecto de hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
+}
+
+.services .icon-box:hover h3 {
+  color: var(--accent-color); /* Cambiar color del título al hacer hover */
+}
 /*-----------------------
 # Starter Section Section
 
