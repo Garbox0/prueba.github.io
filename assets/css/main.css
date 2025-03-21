@@ -1126,24 +1126,28 @@ section,
   text-align: center;
 }
 
+/* Estilos para los filtros */
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
+  padding: 8px 20px;
+  margin: 0 5px 10px 0;
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
-  margin-bottom: 5px;
+  color: var(--default-color); /* Color del texto */
+  background-color: transparent; /* Fondo transparente por defecto */
+  border: 2px solid var(--accent-color); /* Borde verde */
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
 }
 
+/* Estilos para el filtro activo o al hacer hover */
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  color: var(--contrast-color); /* Texto en blanco */
+  background-color: var(--accent-color); /* Fondo verde */
+  border-color: var(--accent-color); /* Borde verde */
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1175,17 +1179,17 @@ section,
   margin: 0 auto 10px; /* Centra el icono y añade margen inferior */
 }
 
-/* Asegura que todas las tarjetas de proyectos tengan la misma altura */
-.portfolio .portfolio-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+/* Asegura que las imágenes tengan un tamaño fijo */
+.portfolio .portfolio-item img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 250px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  border-radius: 4px; /* Bordes redondeados (opcional) */
 }
 
-/* Alinea el contenido dentro de las tarjetas */
-.portfolio .portfolio-item img {
-  flex-grow: 1; /* Hace que la imagen ocupe el espacio disponible */
-  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+/* Asegura que el contenedor de las imágenes tenga un tamaño consistente */
+.portfolio .portfolio-item {
+  margin-bottom: 30px; /* Espacio entre los elementos */
 }
 
 .portfolio .portfolio-item .portfolio-info {
